@@ -6,7 +6,7 @@ public class PersonDetails {
     String address;
     String city;
     String state;
-    int zip;
+    long zip;
     long phoneNumber;
     String email;
 
@@ -50,11 +50,11 @@ public class PersonDetails {
         this.state = state;
     }
 
-    public int getZip() {
+    public long getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(long zip) {
         this.zip = zip;
     }
 
