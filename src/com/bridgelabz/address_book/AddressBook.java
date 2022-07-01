@@ -12,23 +12,32 @@ public class AddressBook {
 
         PersonDetails personDetails = new PersonDetails();
         System.out.print("Enter First Name : ");
-        personDetails.firstName = sc.nextLine();
+        personDetails.firstName = sc.next();
         System.out.print("Enter Last Name : ");
-        personDetails.lastName = sc.nextLine();
+        personDetails.lastName = sc.next();
         System.out.print("Enter Address : ");
-        personDetails.address = sc.nextLine();
+        personDetails.address = sc.next();
         System.out.print("Enter City : ");
-        personDetails.city = sc.nextLine();
+        personDetails.city = sc.next();
         System.out.print("Enter State : ");
-        personDetails.state = sc.nextLine();
+        personDetails.state = sc.next();
         System.out.print("Enter Email : ");
-        personDetails.email = sc.nextLine();
+        personDetails.email = sc.next();
         System.out.print("Enter zip : ");
         personDetails.zip = sc.nextInt();
         System.out.print("Enter PhoneNumber : ");
         personDetails.phoneNumber = sc.nextLong();
         contactList.add(personDetails);
 
+    }
+
+    public void addContact() {
+        System.out.println("Enter Number of contacts to be added");
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter contact details of person");
+            personInputDetails();
+        }
     }
 
     public void showDetails() {

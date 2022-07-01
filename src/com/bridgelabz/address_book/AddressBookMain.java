@@ -20,12 +20,12 @@ public class AddressBookMain {
             System.out.println(" 1.Add a new contact.");
             System.out.println(" 2.display contact.");
             System.out.println(" 3.edit contact.");
-            System.out.println(" 4.edit contact.");
+            System.out.println(" 4.delete contact.");
             System.out.println("_________________________________");
             option = sc.nextInt();
             switch (option) {
                 case ADD_CONTACT:
-                    addressBook.personInputDetails();
+                    addressBook.addContact();
                     break;
                 case DISPLAY_DETAILS:
                     addressBook.showDetails();
