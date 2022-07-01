@@ -75,5 +75,21 @@ public class AddressBook {
             System.out.println("Contact Number Not Found.");
         }
     }
+
+    public void deletePerson() {
+
+        System.out.println("Enter the first name you want to delete the contact");
+        String firstName = sc.next();
+
+        for (PersonDetails personDetails : contactList) {
+            if (firstName.equals(personDetails.getFirstName())) {
+                contactList.remove(personDetails);
+                System.out.println("Contact deleted");
+            } else {
+                System.out.println("no such contact to delete");
+            }
+            break;
+        }
+    }
 }
 
